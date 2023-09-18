@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <script>
-        var num1  = 9
-        var num2 = 2
+        var num1 = prompt('digite o valor de num1:')
+        var num2 = prompt('digite o valor de num2:')
 
-        document.write('a soma entre '+ num1 +' e '+num2+' é :' + (num1 + num2) + '<hr />')
+        var num1 = parseInt(num1)
+        var num2 = parseInt(num2)
+
+        document.write('a soma entre '+ num1 +' e '+ num2 +' é :' + (num1 + num2) + '<hr />')
         document.write('a subtração entre '+ num1 +' e '+num2+' é :' + (num1 - num2) + '<hr />')
         document.write('a multiplicação entre '+ num1 +' e '+num2+' é :' + (num1 * num2) + '<hr />')
         document.write('a divisão entre '+ num1 +' e '+num2+' é :' + (num1 / num2) + '<hr />')
