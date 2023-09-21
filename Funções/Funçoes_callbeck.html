@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //Funções callbeck
+
+      function exibirArtigo(id, callbeckSucesso, callbeckErro) {
+        if (true) {
+          callbeckSucesso("Função callbeck realizada com sucesso", "Funções callbeck são utilizadas no dia dia profissional");
+        } else {
+          callbeckErro("Erro em recuperar dados");
+        }
+      }
+
+      var callbeckSucesso = function (titulo,descricao) {
+        document.write('<h1>'+ titulo +'</h1>')
+        document.write('<hr />')
+        document.write('<p>'+ descricao +'</p>')
+
+      }
+
+      var callbeckErro = function (titulo,descricao) {
+        document.write('<h1>'+ titulo +'</h1>')
+      }
+
+      exibirArtigo(1, callbeckSucesso, callbeckErro)
+    </script>
+  </head>
+  <body></body>
+</html>
