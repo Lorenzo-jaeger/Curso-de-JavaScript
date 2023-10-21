@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var date = new Date();
+
+    //   date.getDate;
+    //   //propriedade Date
+    //   document.write(
+    //     "hoje é dia " +
+    //       date.getDate() +
+    //       " do mes " +
+    //       (date.getMonth() + 1) +
+    //       " de " +
+    //       date.getFullYear()
+    //   );
+
+    //   document.write("<br>");
+
+      //add /remover dias
+      document.write(date.toString());
+      date.setDate(date.getDate() + 5)
+      document.write("<br>");
+      document.write(date.toString());
+      document.write("<br>");
+
+      //add /remover mes
+      document.write(date.toString());
+      date.setMonth(date.getMonth() + 3)
+      document.write("<br>");
+      document.write(date.toString());
+      document.write("<br>");
+
+      //add /remover ano
+      document.write(date.toString());
+      date.setFullYear(date.getFullYear() + 2)
+      document.write("<br>");
+      document.write(date.toString());
+      document.write("<br>");
+
+    </script>
+  </head>
+  <body></body>
+</html>
